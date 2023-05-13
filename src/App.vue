@@ -3,10 +3,12 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
 import Navigation from "@/components/Navigation.vue";
+import BasicLayouts from "@/layouts/BasicLayouts.vue";
 </script>
 
 <template>
-  <Navigation></Navigation>
+<!--  <Navigation></Navigation>-->
+  <BasicLayouts></BasicLayouts>
 </template>
 
 <style scoped>

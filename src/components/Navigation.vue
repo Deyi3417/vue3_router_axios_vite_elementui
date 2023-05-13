@@ -5,7 +5,6 @@
       <span class="title">Liudy23 学习天地</span>
       <span class="name">{{ name }}</span>
     </el-header>
-
     <el-container>
       <el-aside class="aside">
         <!--  router="true" 表示开启路由模式 根据index进行跳转 -->
@@ -70,31 +69,6 @@
         <router-view></router-view>
       </el-main>
     </el-container>
-
-
-    <el-container>
-      <el-aside class="aside">
-        <el-menu class="menu" mode="vertical">
-          <el-menu-item index="/about" route="true">
-            <span>可以</span>
-          </el-menu-item>
-          <el-menu-item index="/">
-            <router-link to="/">首页</router-link>
-          </el-menu-item>
-          <el-menu-item index="/about">
-            <router-link to="/about">个人中心</router-link>
-            <div>
-              <el-sub-menu>
-                <el-menu-item index="/user">用户列表</el-menu-item>
-                <el-menu-item index="/user/add">添加用户</el-menu-item>
-              </el-sub-menu>
-            </div>
-
-          </el-menu-item>
-        </el-menu>
-      </el-aside>
-
-    </el-container>
   </div>
 </template>
 
@@ -106,7 +80,7 @@ import {
   Setting, House, User,
 } from '@element-plus/icons-vue'
 
-const name = '刘德意'
+const name = 'Navigation'
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
