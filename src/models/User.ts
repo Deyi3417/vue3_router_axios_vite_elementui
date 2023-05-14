@@ -8,6 +8,7 @@ export interface User {
     userStatus: string;
     profile: string;
     createTime: Date;
+    createTimeStr: string
 }
 export const users: User[] = [
     {
@@ -15,11 +16,12 @@ export const users: User[] = [
         username: '刘德意',
         gender: '男',
         phone: '18811553417',
-        avatarUrl: 'https://i.pravatar.cc/150?img=1',
+        avatarUrl: 'https://api2.mubu.com/v3/document_image/d7794d36-4baf-45e3-a808-be61a2eb09f0-13224389.jpg',
         email: '18811553417@163.com',
         userStatus: "正常",
         profile: '来自湖南。',
         createTime: new Date('2023-05-13'),
+        createTimeStr: '2022-02-22'
     },
     {
         id: 2,
@@ -31,6 +33,7 @@ export const users: User[] = [
         userStatus: '正常',
         profile: '我是张三，来自北京。',
         createTime: new Date('2022-01-01'),
+        createTimeStr: '2023-05-14'
     },
     {
         id: 3,
@@ -42,6 +45,7 @@ export const users: User[] = [
         userStatus: '禁用',
         profile: '我是李四，来自上海。',
         createTime: new Date('2022-02-01'),
+        createTimeStr: '2023-05-14 12:00:00'
     },
 ];
 
