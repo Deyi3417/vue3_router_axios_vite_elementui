@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import {users} from '../models/User'
-import {formatDate_1, formatDate_2} from "@/util/TimeUtils";
+import {formatDate_1, formatDate_2} from "@/utils/TimeUtils";
 // users.map(e => {
 //   e.testTime = formatDate_1(e.createTime)
 // })

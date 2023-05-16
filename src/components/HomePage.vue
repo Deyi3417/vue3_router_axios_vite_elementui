@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import TimeFormat from "../util/TimeFormat.vue";
-import {formatDate, formatDate_1, formatDate_2, formatDate_3} from "@/util/TimeUtils";
+import TimeFormat from "../utils/TimeFormat.vue";
+import {formatDate, formatDate_1, formatDate_2, formatDate_3} from "@/utils/TimeUtils";
 const currentDate = new Date()
 const formattedDate = formatDate(currentDate, 'YYYY-MM-DD HH:mm:ss');
 const formattedDate_1 = formatDate_1(new Date());
