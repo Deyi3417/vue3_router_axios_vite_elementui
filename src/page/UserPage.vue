@@ -2,8 +2,8 @@
   <span style="font-size: 20px">用户列表:</span>
   <div>
     <el-table :data="users" empty-text border style="width: 100%" :header-cell-style="headerCellStyle"
-    :cell-style="cellStyle">
-      <el-table-column prop="id" label="ID" ></el-table-column>
+              :cell-style="cellStyle">
+      <el-table-column prop="id" label="ID"></el-table-column>
       <el-table-column prop="username" label="姓名"></el-table-column>
       <el-table-column prop="gender" label="性别"></el-table-column>
       <el-table-column prop="phone" label="电话"></el-table-column>
@@ -12,6 +12,7 @@
       <el-table-column prop="profile" label="简介"></el-table-column>
       <el-table-column prop="createTimeStr" label="创建时间"></el-table-column>
       <el-table-column label="头像">
+        <!--  使用插槽显示头像  -->
         <template v-slot="{ row }">
           <el-image :src="row.avatarUrl" style="width: 50px; height: 50px; border-radius: 50%" fit="cover"></el-image>
         </template>

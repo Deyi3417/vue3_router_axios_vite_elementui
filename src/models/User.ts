@@ -40,7 +40,7 @@ export const users: User[] = [
         username: '李四',
         gender: '女',
         phone: '13800000002',
-        avatarUrl: 'https://i.pravatar.cc/150?img=2',
+        avatarUrl: 'https://api2.mubu.com/v3/document_image/b8cdc710-c8de-4eaa-8ac3-0cceae209024-13224389.jpg',
         email: 'lisi@example.com',
         userStatus: '禁用',
         profile: '我是李四，来自上海。',
